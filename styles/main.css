@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/ttf/JetBrainsMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/ttf/JetBrainsMono-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/ttf/JetBrainsMono-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/ttf/JetBrainsMono-Bold-Italic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+    background: #222;
+    color: white;
+    font-family: "JetBrains Mono", sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    order: 1;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 24px;
+    height: 5vh;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+header>div>p {
+    margin: 0 10px;
+}
+
+header>div>p:hover {
+    text-decoration: underline;
+}
+
+header>a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header>div>p>a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header>a:hover {
+    font-stretch: normal;
+}
+
+content {
+    order: 2;
+    flex: content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+content>h3 {
+    margin-bottom: 20px;
+}
+
+citation {
+    margin-top: 20px;
+}
+
+credit {
+    float: left;
+    font-size: 12px;
+    align-content: center;
+}
+
+footer {
+    height: 5vh;
+    flex: auto;
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer>p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
