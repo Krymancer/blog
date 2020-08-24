@@ -7,8 +7,6 @@
     <title>Krymancer</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
 </head>
 
 <body>
@@ -44,6 +42,57 @@
         <p><a href="https://github.com/krymancer">KRYMANCER</a> © 2020</p>
     </footer>
 </body>
-<script src='js/main.js'></script>
+<script>
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+
+    let r = 140;
+    let factor = 0;
+    const total = 100;
+
+    context.strokeStyle = 'white';
+    context.fillStyle = 'white';
+
+    function map(value, low1, high1, low2, high2) {
+        return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+    }
+
+    function getVector(index, total) {
+        const angle = map(index % total, 0, total, 0, 2 * Math.PI);
+        const v = {
+            x: Math.cos(angle) * r,
+            y: Math.sin(angle) * r,
+        }
+
+        return v;
+    }
+
+
+    function update() {
+        context.clearRect(0, 0, 300, 300);
+        context.beginPath();
+        context.arc(150, 150, r, 0, 2 * Math.PI);
+        context.stroke();
+        context.translate(150, 150);
+
+        factor += 0.01;
+
+        for (let i = 0; i < total; i++) {
+            const a = getVector(i, total);
+            const b = getVector(i * factor, total);
+
+            context.beginPath();
+            context.moveTo(a.x, a.y);
+            context.lineTo(b.x, b.y);
+            context.stroke();
+            context.moveTo(0, 0);
+        }
+
+        context.translate(-150, -150);
+        requestAnimationFrame(update);
+    }
+
+    update();
+</script>
 
 </html>
