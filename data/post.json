@@ -1,0 +1,26 @@
+[
+    {
+        "title" : "Cardiod Mutiplaction Table",
+        "description" : "The good old multiplication, applied in such a beautiful way that in itself can be called art, the dancing mandela"
+    },
+    {
+        "title" : "Pathfinding: A* (A-star)",
+        "description" : "A graph traversal and path search algorithm, with low complexity, completeness, optimality, and optimal efficiency"
+    },
+    {
+        "title" : "Genetic Algorithm and Flappy Bird",
+        "description" : "Using mathematic, computer sience and make a computer beat a game in 10 minutes, sounds like magic but it's the beuty of genetic algorithms"
+    },
+    {
+        "title" : "Drawing with Fourrier Transform",
+        "description" : "Making art with Fourrier Series, making every possible curve, transorming numbers in art, see how cos and sin waves can make draws"
+    },
+    {
+        "title" : "Sorting Algorithms",
+        "description" : "A visualization of the most famous sorting algorithms, may seem chaos, but if we look close, is a beatiful dance"
+    },
+    {
+        "title" : "ASCII Art and Smoothed-particle hydrodynamics",
+        "description" : "Fluid simulation its kind hard, but with SPH we can simulate and visulaize fluid using ASCII characters, its a great way to learn"
+    }
+]

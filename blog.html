@@ -7,6 +7,7 @@
     <title>Blog - Krymancer</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/blog.css'>
 </head>
 
 <body>
@@ -24,10 +25,48 @@
 
     <content>
         <h3>BLOG</h3>
+
+        <container id="container">
+
+        </container>
+
     </content>
 
     <footer>
         <p><a href="https://github.com/krymancer">KRYMANCER</a> © 2020</p>
     </footer>
 </body>
+
+<script>
+    function loadJSON(path) {
+        return fetch(path).then(res => res.json());
+    }
+
+    function createPost(data) {
+        const title = document.createElement('ptitle');
+        const description = document.createElement('description');
+        const post = document.createElement('post');
+
+        title.innerHTML = data.title;
+        description.innerHTML = data.description;
+
+        post.appendChild(title);
+        post.appendChild(description);
+
+        return post;
+    }
+
+    function renderPost(post) {
+        container.appendChild(post);
+    }
+
+    const container = document.getElementById('container');
+
+    loadJSON("./data/post.json").then((data) => {
+        data.forEach((post) => {
+            renderPost(createPost(post));
+        });
+    });
+</script>
+
 </html>
