@@ -25,13 +25,14 @@
 
     <content>
         <h3>CONTACT</h3>
-        <p>Want to work together? Send me a message!</p>
+        <p>Want to work together    ? Send me a message!</p>
         <wrapper>
-            <form id="form" name="form" class="form">
-                <input id="name" name="name" type="text" placeholder="Name" class="input"/>
-                <input id="email" name="email" type="email" placeholder="Email" class="input"/>
-                <textarea id="message" name="message" cols="40" rows="5" placeholder="Message" class="input"></textarea>
-            </form>
+            <div id="form" name="form" class="form">
+                <input id="name" name="name" type="text" placeholder="Name" class="input" required="true"/>
+                <input id="email" name="email" type="email" placeholder="Email" class="input" required="true"/>
+                <textarea id="message" name="message" cols="40" rows="5" placeholder="Message" class="input" required="true"></textarea>
+                <button id="send" onclick="send()" >Send</button>
+            </div>
         </wrapper>
     </content>
 
@@ -39,5 +40,5 @@
         <p><a href="https://github.com/krymancer">KRYMANCER</a> © 2020</p>
     </footer>
 </body>
-
+<script src='js/contact.js'></script>
 </html>
