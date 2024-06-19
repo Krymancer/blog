@@ -6,8 +6,16 @@
     <description>Recent content on krymancer.dev</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 18 Jun 2024 18:08:37 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2024 22:22:57 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building My Own JSON Parser in Rust</title>
+      <link>http://localhost:1313/posts/02-cc-json-parser/</link>
+      <pubDate>Tue, 18 Jun 2024 22:22:57 -0300</pubDate>
+      <guid>http://localhost:1313/posts/02-cc-json-parser/</guid>
+      <description>Introduction I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.
+The Challenge The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures.</description>
+    </item>
     <item>
       <title>[Coding Chalenge] - Building my Own wc Tool in Rust</title>
       <link>http://localhost:1313/posts/01-cc-wt/</link>
