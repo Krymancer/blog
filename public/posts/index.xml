@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on krymancer.dev</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://krymancer.dev/posts/</link>
     <description>Recent content in Posts on krymancer.dev</description>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo</generator>
     <language>pt-br</language>
     <lastBuildDate>Tue, 18 Jun 2024 22:22:57 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://krymancer.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building My Own JSON Parser in Rust</title>
-      <link>http://localhost:1313/posts/02-cc-json-parser/</link>
+      <link>https://krymancer.dev/posts/02-cc-json-parser/</link>
       <pubDate>Tue, 18 Jun 2024 22:22:57 -0300</pubDate>
-      <guid>http://localhost:1313/posts/02-cc-json-parser/</guid>
-      <description>Introduction I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.
-The Challenge The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures.</description>
+      <guid>https://krymancer.dev/posts/02-cc-json-parser/</guid>
+      <description>Introduction I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.&#xA;The Challenge The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures.</description>
     </item>
     <item>
       <title>[Coding Chalenge] - Building my Own wc Tool in Rust</title>
-      <link>http://localhost:1313/posts/01-cc-wt/</link>
+      <link>https://krymancer.dev/posts/01-cc-wt/</link>
       <pubDate>Tue, 18 Jun 2024 18:08:37 -0300</pubDate>
-      <guid>http://localhost:1313/posts/01-cc-wt/</guid>
-      <description>Introduction In this post, I&amp;rsquo;ll walk you through my journey of building a custom version of the Unix wc (word count) tool, which I named ccwc (Coding Challenges Word Count). This project was inspired by a coding challenge designed to teach the Unix Philosophy of creating simple, composable command-line tools. You can find more details and source code in my GitHub repository.
-The Challenge The challenge was to build a wc tool that can:</description>
+      <guid>https://krymancer.dev/posts/01-cc-wt/</guid>
+      <description>I found myself not really excited to code anything and that was really bothering me. I was always excited to code something, learning something new and not being able to enjoy it or have the motivation to do it was really driving me crazy. I don&amp;rsquo;t really know what was the cause but I can&amp;rsquo;t do anytthing, I felt like I was justing being lazy, tried to read a book, or take a time for myself but nothing really helped.</description>
     </item>
     <item>
       <title>My First Zig API</title>
-      <link>http://localhost:1313/posts/00-demo-post/</link>
+      <link>https://krymancer.dev/posts/00-demo-post/</link>
       <pubDate>Wed, 05 Jun 2024 20:50:06 -0300</pubDate>
-      <guid>http://localhost:1313/posts/00-demo-post/</guid>
+      <guid>https://krymancer.dev/posts/00-demo-post/</guid>
       <description>There&amp;rsquo;s this event, which is conceived by Zanfranceschi. Essentially, Zan gave us a specification that we followed to implement an API. For this first quarter edition of 2024, we have a kind of &amp;ldquo;Bank&amp;rdquo; where some pre-registered clients check their statements and make transactions. If you want to read more details, I invite you to take a look at the repository of the event, where you can find the specifications along with the rest of the participation instructions and related information.</description>
     </item>
   </channel>
