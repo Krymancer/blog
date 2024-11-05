@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>krymancer.dev</title>
     <link>https://krymancer.dev/</link>
     <description>Recent content on krymancer.dev</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.137.0</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 18 Jun 2024 22:22:57 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2024 00:45:49 -0300</lastBuildDate>
     <atom:link href="https://krymancer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I really hate AI</title>
+      <link>https://krymancer.dev/posts/03-burnout/</link>
+      <pubDate>Tue, 20 Aug 2024 00:45:49 -0300</pubDate>
+      <guid>https://krymancer.dev/posts/03-burnout/</guid>
+      <description>&lt;p&gt;Ins&amp;rsquo;t news that OpenAI released ChatGPT into the wild of the internet and it become the most rapidly used product ever (don&amp;rsquo;t check me on that I cloud be wrong). People started using it for everything and I mean everything. I saw it in websites, I saw it in software and products that really don&amp;rsquo;t beneficiate even a little bit in having all might &amp;ldquo;AI&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ts almost impossible now days getting support for a product because of the chat bots that don&amp;rsquo;t help at all, a FAQ would be better, cost less and don&amp;rsquo;t harm the environment as much. I decided to write this after I read &lt;a href=&#34;https://daniel.haxx.se/blog/2024/01/02/the-i-in-llm-stands-for-intelligence/&#34;&gt;this incredible post&lt;/a&gt; by Daniel Stenberg. You might already know what it is and where this is going.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building My Own JSON Parser in Rust</title>
       <link>https://krymancer.dev/posts/02-cc-json-parser/</link>
       <pubDate>Tue, 18 Jun 2024 22:22:57 -0300</pubDate>
       <guid>https://krymancer.dev/posts/02-cc-json-parser/</guid>
-      <description>Introduction I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.&#xA;The Challenge The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge &lt;a href=&#34;https://codingchallenges.fyi/challenges/challenge-json-parser&#34;&gt;here&lt;/a&gt; and the source code in my &lt;a href=&#34;https://github.com/Krymancer/cc-json-parser&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;
+&lt;p&gt;The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here&amp;rsquo;s a step-by-step breakdown of the process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[Coding Chalenge] - Building my Own wc Tool in Rust</title>
       <link>https://krymancer.dev/posts/01-cc-wt/</link>
       <pubDate>Tue, 18 Jun 2024 18:08:37 -0300</pubDate>
       <guid>https://krymancer.dev/posts/01-cc-wt/</guid>
-      <description>I found myself not really excited to code anything and that was really bothering me. I was always excited to code something, learning something new and not being able to enjoy it or have the motivation to do it was really driving me crazy. I don&amp;rsquo;t really know what was the cause but I can&amp;rsquo;t do anytthing, I felt like I was justing being lazy, tried to read a book, or take a time for myself but nothing really helped.</description>
+      <description>&lt;p&gt;I found myself not really excited to code anything and that was really bothering me. I was always excited to code something, learning something new and not being able to enjoy it or have the motivation to do it was really driving me crazy. I don&amp;rsquo;t really know what was the cause but I can&amp;rsquo;t do anytthing, I felt like I was justing being lazy, tried to read a book, or take a time for myself but nothing really helped. So I started to serching for a new project that I cloud make and be excited about, nothing really caught my eye, same basic projects as aways, frontend projects are either too simple or have some gimmic that I didn&amp;rsquo;t really care at the moment, backend projects are always CRUD at this point. I was really lost, I didn&amp;rsquo;t know what to do, I was really sad about it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Zig API</title>
       <link>https://krymancer.dev/posts/00-demo-post/</link>
       <pubDate>Wed, 05 Jun 2024 20:50:06 -0300</pubDate>
       <guid>https://krymancer.dev/posts/00-demo-post/</guid>
-      <description>There&amp;rsquo;s this event, which is conceived by Zanfranceschi. Essentially, Zan gave us a specification that we followed to implement an API. For this first quarter edition of 2024, we have a kind of &amp;ldquo;Bank&amp;rdquo; where some pre-registered clients check their statements and make transactions. If you want to read more details, I invite you to take a look at the repository of the event, where you can find the specifications along with the rest of the participation instructions and related information.</description>
-    </item>
-    <item>
-      <title>Archive</title>
-      <link>https://krymancer.dev/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://krymancer.dev/archive/</guid>
-      <description>archives</description>
+      <description>&lt;p&gt;There&amp;rsquo;s this event, which is conceived by Zanfranceschi. Essentially, Zan gave us a specification that we followed to implement an API. For this first quarter edition of 2024, we have a kind of &amp;ldquo;Bank&amp;rdquo; where some pre-registered clients check their statements and make transactions. If you want to read more details, I invite you to take a look at the repository of the &lt;a href=&#34;https://github.com/zanfranceschi/rinha-de-backend-2024-q1&#34;&gt;event&lt;/a&gt;, where you can find the specifications along with the rest of the participation instructions and related information.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
