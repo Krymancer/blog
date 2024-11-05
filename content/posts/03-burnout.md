@@ -21,7 +21,7 @@ I guess is because I've been studying AI and computers for a long time that not 
 ## Nothing exists anymore
 
 With LLM existing and stable diffusing being able to generate images the is so much AI generated content in the word. Sometimes is hard to not see anything like this in the internet, people are lazy so they will ask for a LLM to do anything and don't even proof read. Oh well I saw people that wont even look at was generated. People don't search anymore.
-I know I'm sounding like "Back in my days things are better" but I do think that the way we are going with LLM is wrong. This much brainless content that is just words on top of words is harmful. Shows already aren't great and imagine if the next ones being writed only by AI.
+I know I'm sounding like "Back in my days things are better" but I do think that the way we are going with LLM is wrong. This much brainless content that is just words on top of words is harmful. Shows already aren't great and imagine if the next ones being wrote only by AI.
 
 ## AI is good
 
