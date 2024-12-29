@@ -1,5 +1,5 @@
 +++
-title = 'Building My Own JSON Parser in Rust'
+title = 'Building a JSON Parser in Rust'
 date = 2024-06-18T22:22:57-03:00
 draft = false 
 +++

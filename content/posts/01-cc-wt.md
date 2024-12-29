@@ -1,5 +1,5 @@
 +++
-title = '[Coding Chalenge] - Building my Own wc Tool in Rust'
+title = 'Building my own wc Tool in Rust'
 date = 2024-06-18T18:08:37-03:00
 draft = false
 +++
