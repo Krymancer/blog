@@ -12,3 +12,8 @@ menu:
     url: https://github.com/krymancer
   - name: Twitter
     url: https://x.com/joaodocodigo
+
+
+
+params:
+  comments: true

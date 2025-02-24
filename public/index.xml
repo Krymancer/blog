@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>krymancer.dev</title>
-    <link>https://krymancer.dev/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on krymancer.dev</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>pt-br</language>
     <lastBuildDate>Tue, 18 Jun 2024 22:22:57 -0300</lastBuildDate>
-    <atom:link href="https://krymancer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a JSON Parser in Rust</title>
-      <link>https://krymancer.dev/posts/02-cc-json-parser/</link>
+      <link>http://localhost:1313/posts/02-cc-json-parser/</link>
       <pubDate>Tue, 18 Jun 2024 22:22:57 -0300</pubDate>
-      <guid>https://krymancer.dev/posts/02-cc-json-parser/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge &lt;a href=&#34;https://codingchallenges.fyi/challenges/challenge-json-parser&#34;&gt;here&lt;/a&gt; and the source code in my &lt;a href=&#34;https://github.com/Krymancer/cc-json-parser&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;&#xA;&lt;p&gt;The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here&amp;rsquo;s a step-by-step breakdown of the process.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/02-cc-json-parser/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge &lt;a href=&#34;https://codingchallenges.fyi/challenges/challenge-json-parser&#34;&gt;here&lt;/a&gt; and the source code in my &lt;a href=&#34;https://github.com/Krymancer/cc-json-parser&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;the-challenge&#34;&gt;The Challenge&lt;/h3&gt;
+&lt;p&gt;The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here&amp;rsquo;s a step-by-step breakdown of the process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building my own wc Tool in Rust</title>
-      <link>https://krymancer.dev/posts/01-cc-wt/</link>
+      <link>http://localhost:1313/posts/01-cc-wt/</link>
       <pubDate>Tue, 18 Jun 2024 18:08:37 -0300</pubDate>
-      <guid>https://krymancer.dev/posts/01-cc-wt/</guid>
+      <guid>http://localhost:1313/posts/01-cc-wt/</guid>
       <description>&lt;p&gt;I found myself not really excited to code anything and that was really bothering me. I was always excited to code something, learning something new and not being able to enjoy it or have the motivation to do it was really driving me crazy. I don&amp;rsquo;t really know what was the cause but I can&amp;rsquo;t do anytthing, I felt like I was justing being lazy, tried to read a book, or take a time for myself but nothing really helped. So I started to serching for a new project that I cloud make and be excited about, nothing really caught my eye, same basic projects as aways, frontend projects are either too simple or have some gimmic that I didn&amp;rsquo;t really care at the moment, backend projects are always CRUD at this point. I was really lost, I didn&amp;rsquo;t know what to do, I was really sad about it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Zig API</title>
-      <link>https://krymancer.dev/posts/00-demo-post/</link>
+      <link>http://localhost:1313/posts/00-demo-post/</link>
       <pubDate>Wed, 05 Jun 2024 20:50:06 -0300</pubDate>
-      <guid>https://krymancer.dev/posts/00-demo-post/</guid>
+      <guid>http://localhost:1313/posts/00-demo-post/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s this event, which is conceived by Zanfranceschi. Essentially, Zan gave us a specification that we followed to implement an API. For this first quarter edition of 2024, we have a kind of &amp;ldquo;Bank&amp;rdquo; where some pre-registered clients check their statements and make transactions. If you want to read more details, I invite you to take a look at the repository of the &lt;a href=&#34;https://github.com/zanfranceschi/rinha-de-backend-2024-q1&#34;&gt;event&lt;/a&gt;, where you can find the specifications along with the rest of the participation instructions and related information.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Archive</title>
-      <link>https://krymancer.dev/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://krymancer.dev/archive/</guid>
-      <description>archives</description>
     </item>
   </channel>
 </rss>

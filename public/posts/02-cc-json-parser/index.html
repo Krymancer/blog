@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Building My Own JSON Parser in Rust | krymancer.dev</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Building a JSON Parser in Rust | krymancer.dev</title>
 <meta name="keywords" content="">
 <meta name="description" content="Introduction
 I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.
 The Challenge
 The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here&rsquo;s a step-by-step breakdown of the process.">
 <meta name="author" content="">
-<link rel="canonical" href="https://krymancer.dev/posts/02-cc-json-parser/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fef8779215f36ed5e7104a9f91faf747f36de6927fa5d2ad53a6cb9e4cb0bc10.css" integrity="sha256-/vh3khXzbtXnEEqfkfr3R/Nt5pJ/pdKtU6bLnkywvBA=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://krymancer.dev/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://krymancer.dev/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://krymancer.dev/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://krymancer.dev/apple-touch-icon.png">
-<link rel="mask-icon" href="https://krymancer.dev/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1313/posts/02-cc-json-parser/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d31c6f8ab3aa12f2a707f679661ba61a8edccb3e9ce03d5c115e1d5e13dd3133.css" integrity="sha256-0xxvirOqEvKnB/Z5ZhumGo7cyz6c4D1cEV4dXhPdMTM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://krymancer.dev/posts/02-cc-json-parser/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/02-cc-json-parser/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,73 +58,7 @@ The challenge was structured to incrementally build a JSON parser, starting with
         }
 
     </style>
-</noscript><meta property="og:title" content="Building My Own JSON Parser in Rust" />
-<meta property="og:description" content="Introduction
-I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.
-The Challenge
-The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here&rsquo;s a step-by-step breakdown of the process." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://krymancer.dev/posts/02-cc-json-parser/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-06-18T22:22:57-03:00" />
-<meta property="article:modified_time" content="2024-06-18T22:22:57-03:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Building My Own JSON Parser in Rust"/>
-<meta name="twitter:description" content="Introduction
-I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.
-The Challenge
-The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here&rsquo;s a step-by-step breakdown of the process."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://krymancer.dev/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Building My Own JSON Parser in Rust",
-      "item": "https://krymancer.dev/posts/02-cc-json-parser/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Building My Own JSON Parser in Rust",
-  "name": "Building My Own JSON Parser in Rust",
-  "description": "Introduction I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.\nThe Challenge The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here\u0026rsquo;s a step-by-step breakdown of the process.\n",
-  "keywords": [
-    
-  ],
-  "articleBody": "Introduction I recently took on a challenge to build my own JSON parser in Rust. This project was a fantastic opportunity to dive deep into parsing techniques, which are crucial for everything from simple data formats to building compilers. You can find the full details of the challenge here and the source code in my GitHub repository.\nThe Challenge The challenge was structured to incrementally build a JSON parser, starting with simple JSON objects and progressively handling more complex structures. Here’s a step-by-step breakdown of the process.\nStep Zero: Thinking about the problem and data structure Being honest I never really implement anything like a parser, my first idea was to count the curly braces and see if they are even (what passes the frist checks for this code challenge). But when I need to parse key-values I started to strugle. Then I took two steps backs and search about parser and remember that compiles do use tokens and parser in order to work so I started in creating a structre to handle all possible tokens in a json, and rust type system really helped me:\nenum Token { CurlyOpen, CurlyClose, SquareOpen, SquareClose, Colon, Comma, String(String), Number(f64), Bool(bool), Null, } This struct contains all the possible tokens that we will need, I took then from the json.org website, that have a really great visual representation of how parsing a json file works.\nStep One: Tokenizing the input The frist step was to get each character of the file and iterate them to create a array of tokens to be fed in a parser. Most of the tokens are straightfoward like curly braces, braces, colons and commas, but values like string, numbers, boolean and nulls required a little more work, I will not show each one because is mostly iterate throug chars making sure that the value is expected, like in string that started with \" and finishes with \", numbers can not have trailing zeros and so on. But I had some troubles that I found during testing that I find interesting and will metion latter.\nfn tokenize(input: String) -\u003e Result\u003cVec\u003cToken\u003e\u003e { // some checks and initialization ... while let Some(\u0026ch) = chars.peek() { match ch { '{' =\u003e { tokens.push(Token::CurlyOpen); chars.next(); } '}' =\u003e { tokens.push(Token::CurlyClose); chars.next(); } '[' =\u003e { tokens.push(Token::SquareOpen); chars.next(); } ']' =\u003e { tokens.push(Token::SquareClose); chars.next(); } ':' =\u003e { tokens.push(Token::Colon); chars.next(); } ',' =\u003e { tokens.push(Token::Comma); chars.next(); } '\"' =\u003e { tokens.push(Token::String(tokenize_string(\u0026mut chars)?)); } '0'..='9' | '-' =\u003e { tokens.push(Token::Number(tokenize_number(\u0026mut chars)?)); } 't' | 'f' =\u003e { tokens.push(Token::Bool(tokenize_bool(\u0026mut chars))); } 'n' =\u003e { tokenize_null(\u0026mut chars); tokens.push(Token::Null); } _ if ch.is_whitespace() =\u003e { chars.next(); } _ =\u003e return Err(anyhow!(\"Unexpected character: {}\", ch)), } } Ok(tokens) } Step Two: Parsing the tokens For parsing I had to use a struct to hold the values, using the json.org example I got all the possible values and created the following struct:\npub enum JsonValue { Object(Vec\u003c(String, JsonValue)\u003e), Array(Vec\u003cJsonValue\u003e), String(String), Number(f64), Bool(bool), Null, } With this struct I created a function that parse the a Token array. When testing I noticed that json.org has tests for depth. I didn’t know that json had a maximum depth, this is in place to prevent some attacks, we can learn more in depth about this searching, this is pretty known actually and I’m sure someone can explain way better than me so let’s keep going.\nThe function parse_tokens make sure that is only one root token and we made the check if is a object or an array also, since json only can have arrays or object as root nodes. Here I already parse the object before checking, this is not ideal but is good enouth for the frist time so I didn’t bother.\nfn parse_tokens(tokens: Vec\u003cToken\u003e) -\u003e Result\u003cJsonValue\u003e { let mut iter = tokens.iter().peekable(); let value = parse_value(\u0026mut iter, 0)?; // Check if there are any remaining tokens after the top-level value if iter.peek().is_some() { return Err(anyhow!(\"Extra tokens after top-level value\")); } match value { JsonValue::Object(_) | JsonValue::Array(_) =\u003e Ok(value), _ =\u003e Err(anyhow!( \"A JSON payload should be an object or array, not a string.\" )), } } The magic happens in the parse_value function:\nfn parse_value\u003c'a, I\u003e(tokens: \u0026mut std::iter::Peekable\u003cI\u003e, depth: usize) -\u003e Result\u003cJsonValue\u003e where I: Iterator\u003cItem = \u0026'a Token\u003e, { if depth \u003e MAX_DEPTH { return Err(anyhow!(\"Exceeded maximum nesting depth\")); } match tokens.peek() { Some(Token::CurlyOpen) =\u003e parse_object(tokens, depth), Some(Token::SquareOpen) =\u003e parse_array(tokens, depth), Some(Token::String(_)) =\u003e { if let Some(Token::String(s)) = tokens.next() { Ok(JsonValue::String(s.clone())) } else { Err(anyhow!(\"Expected a string\")) } } Some(Token::Number(_)) =\u003e { if let Some(Token::Number(n)) = tokens.next() { Ok(JsonValue::Number(*n)) } else { Err(anyhow!(\"Expected a number\")) } } Some(Token::Bool(_)) =\u003e { if let Some(Token::Bool(b)) = tokens.next() { Ok(JsonValue::Bool(*b)) } else { Err(anyhow!(\"Expected a boolean\")) } } Some(Token::Null) =\u003e { tokens.next(); // Consume the Null token Ok(JsonValue::Null) } _ =\u003e Err(anyhow!(\"Unexpected token\")), } } this basicly take care of objects, arrays, strings, numbers, booleans and null values, converting the tokens to an actuall value in rust.\nStep Three: Parsing Nested Objects and Arrays The next step was to handle JSON objects containing other objects and arrays. This required implementing recursive parsing functions, keeping in mind the depth:\nfn parse_object\u003c'a, I\u003e(tokens: \u0026mut std::iter::Peekable\u003cI\u003e, depth: usize) -\u003e Result\u003cJsonValue\u003e where I: Iterator\u003cItem = \u0026'a Token\u003e, { let mut object = Vec::new(); tokens.next(); // Consume the '{' loop { match tokens.peek() { Some(Token::CurlyClose) =\u003e { tokens.next(); // Consume the '}' break; } Some(Token::String(_)) =\u003e { if let Some(Token::String(key)) = tokens.next() { if let Some(Token::Colon) = tokens.next() { let value = parse_value(tokens, depth + 1)?; object.push((key.clone(), value)); match tokens.peek() { Some(Token::Comma) =\u003e { tokens.next(); // Consume the ',' if let Some(Token::CurlyClose) = tokens.peek() { return Err(anyhow!(\"Trailing comma in object\")); } } Some(Token::CurlyClose) =\u003e { tokens.next(); // Consume the '}' break; } _ =\u003e return Err(anyhow!(\"Expected ',' or '}' after object value\")), } } else { return Err(anyhow!(\"Expected ':' after key in object\")); } } } _ =\u003e return Err(anyhow!(\"Expected string key or '}' in object\")), } } Ok(JsonValue::Object(object)) } fn parse_array\u003c'a, I\u003e(tokens: \u0026mut std::iter::Peekable\u003cI\u003e, depth: usize) -\u003e Result\u003cJsonValue\u003e where I: Iterator\u003cItem = \u0026'a Token\u003e, { let mut array = Vec::new(); tokens.next(); // Consume the '[' loop { match tokens.peek() { Some(Token::SquareClose) =\u003e { tokens.next(); // Consume the ']' break; } Some(_) =\u003e { let value = parse_value(tokens, depth + 1)?; array.push(value); match tokens.peek() { Some(Token::Comma) =\u003e { tokens.next(); // Consume the ',' if let Some(Token::SquareClose) = tokens.peek() { return Err(anyhow!(\"Trailing comma in array\")); } } Some(Token::SquareClose) =\u003e { tokens.next(); // Consume the ']' break; } _ =\u003e return Err(anyhow!(\"Expected ',' or ']'\")), }; } _ =\u003e return Err(anyhow!(\"Expected value or ']'\")), }; } Ok(JsonValue::Array(array)) } Step Four: Testing and Validation Finally, I added my own tests to ensure the parser handles both valid and invalid JSON correctly. I also used the JSON test suite from json.org to validate the parser:\n#[cfg(test)] mod tests { use crate::parser::{parse_json, JsonValue}; #[test] fn test_invalid_path() { let path = String::from(\"invalid/path\"); let result = parse_json(path); assert!(result.is_err()); if let Err(e) = result { assert_eq!(e.to_string(), \"Failed to read File\"); } } #[test] fn test_step1_valid() { let path = String::from(\"./tests/step1/valid.json\"); let result = parse_json(path).expect(\"Error parsing JSON\"); assert_eq!(result, JsonValue::Object(vec![])); } // Additional tests for other steps... } Step Five: Testing and fixing… When testing I found two problems that needed I little work to work, strings and numbers.\nMy problem with strings was enconded characters, the frist way that I was checking for strings was to look for the end ‘\"’ putting each character in between into the strings, but I found an test that had:\n{ \"key\": \"\\\"\" } My parser broke, but when making an special case for this I found that I was not at all accouting for escaped chars so I rewrite the function to account for those:\nfn tokenize_string(chars: \u0026mut std::iter::Peekable\u003cstd::str::Chars\u003e) -\u003e Result\u003cString\u003e { let mut result = String::new(); chars.next(); // Skip opening (\") quote while let Some(\u0026ch) = chars.peek() { match ch { '\\\\' =\u003e { chars.next(); // Skip the backslash if let Some(\u0026escaped_char) = chars.peek() { match escaped_char { '\"' =\u003e result.push('\"'), '\\\\' =\u003e result.push('\\\\'), '/' =\u003e result.push('/'), 'b' =\u003e result.push('\\x08'), // Backspace rust don't like \\b in char 'f' =\u003e result.push('\\x0C'), // Form feed rust don't like \\f in char 'n' =\u003e result.push('\\n'), 'r' =\u003e result.push('\\r'), 't' =\u003e result.push('\\t'), 'u' =\u003e { let unicode_sequence = tokenize_unicode_sequence(chars)?; result += \u0026unicode_sequence; } _ =\u003e return Err(anyhow!(\"Invalid escape sequence: \\\\{}\", escaped_char)), } chars.next(); // Skip the escaped character } else { return Err(anyhow!(\"Unexpected end of input after escape character\")); } } '\"' =\u003e { chars.next(); // Skip closing (\") quote break; // Closing quote found } _ if ch.is_whitespace() \u0026\u0026 ch != ' ' =\u003e { return Err(anyhow!( \"Invalid unescaped whitespace character in string: {}\", ch )); } _ =\u003e { result.push(ch); chars.next(); } } } Ok(result) } for some reason rust didn’t like that I put '\\b' and '\\f' into the push function so I used the ascii values instead. This also acount for whitespaces in the strings, the only whitespace allowed is ' ' space itself, tabs and others must be escaped in json.\nI also found that I was not parsing unicode sequeces and they are a little different:\nfn tokenize_unicode_sequence(chars: \u0026mut std::iter::Peekable\u003cstd::str::Chars\u003e) -\u003e Result\u003cString\u003e { let mut result = String::new(); chars.next(); // Skip 'u' let mut unicode_sequence = String::new(); for _ in 0..4 { if let Some(\u0026hex_digit) = chars.peek() { if hex_digit.is_ascii_hexdigit() { unicode_sequence.push(hex_digit); chars.next(); } else { return Err(anyhow!(\"Invalid Unicode escape sequence\")); } } else { return Err(anyhow!( \"Unexpected end of input in Unicode escape sequence\" )); } } if let Ok(unicode_char) = u16::from_str_radix(\u0026unicode_sequence, 16).map(|u| char::from_u32(u as u32)) { if let Some(c) = unicode_char { result.push(c); } else { return Err(anyhow!(\"Invalid Unicode character\")); } } else { return Err(anyhow!(\"Invalid Unicode escape sequence\")); } Ok(result) } This took care of the errors that I had with strings, now we go for numbers. Frist of all, I totally forgot e AND E can be in numbers, they represent scientific notation (e=10^n) like 2e5 is the same as 2 * 10^5. Also json don’t allow leading zeros in numbers so I accounted for that. This got a simple function a lot complex but the end result (not at all perfect) was not too bad:\nfn tokenize_number(chars: \u0026mut std::iter::Peekable\u003cstd::str::Chars\u003e) -\u003e Result\u003cf64, anyhow::Error\u003e { let mut result = String::new(); let mut is_first_char = true; let mut has_dot = false; while let Some(\u0026ch) = chars.peek() { match ch { '0'..='9' =\u003e { if is_first_char \u0026\u0026 ch == '0' { chars.next(); // Consume the '0' if let Some(\u0026next_ch) = chars.peek() { match next_ch { '.' =\u003e { // Handle 0.x numbers result.push('0'); } '0'..='9' =\u003e return Err(anyhow!(\"Invalid number with leading zero\")), _ =\u003e { result.push('0'); // Just 0 break; } } } else { result.push('0'); // Just 0 break; } } else { result.push(ch); chars.next(); } } '.' =\u003e { if has_dot { return Err(anyhow!(\"Multiple decimal points in number\")); } result.push(ch); chars.next(); has_dot = true; } '-' | '+' if is_first_char =\u003e { result.push(ch); chars.next(); } 'e' | 'E' =\u003e { result.push(ch); chars.next(); // After 'e' or 'E', we should expect a digit or a sign if let Some(\u0026next_ch) = chars.peek() { if next_ch == '-' || next_ch == '+' || next_ch.is_digit(10) { result.push(next_ch); chars.next(); } else { return Err(anyhow!(\"Invalid character after exponent\")); } } else { return Err(anyhow!(\"Exponent without digits\")); } } _ =\u003e break, } is_first_char = false; } if let Some(ch) = result.chars().last() { if matches!(ch, 'e' | 'E' | '.' | '-' | '+') { return Err(anyhow!(\"Invalid number\")); } } match result.to_lowercase().parse() { Ok(number) =\u003e Ok(number), Err(..) =\u003e Err(anyhow!(\"Number is invalid\")), } } Conclusion Building a JSON parser from scratch was a challenging but rewarding experience. It provided valuable insights into parsing techniques and Rust programming. You can check out the complete source code and try the parser yourself by visiting my GitHub repository.\nI hope this post inspires you to take on similar challenges and deepen your understanding of parsing and Rust. Happy coding!\n",
-  "wordCount" : "1985",
-  "inLanguage": "en",
-  "datePublished": "2024-06-18T22:22:57-03:00",
-  "dateModified": "2024-06-18T22:22:57-03:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://krymancer.dev/posts/02-cc-json-parser/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "krymancer.dev",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://krymancer.dev/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -142,7 +76,7 @@ The challenge was structured to incrementally build a JSON parser, starting with
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://krymancer.dev/" accesskey="h" title="krymancer.dev (Alt + H)">krymancer.dev</a>
+            <a href="http://localhost:1313/" accesskey="h" title="krymancer.dev (Alt + H)">krymancer.dev</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -168,7 +102,7 @@ The challenge was structured to incrementally build a JSON parser, starting with
         </div>
         <ul id="menu">
             <li>
-                <a href="https://krymancer.dev/archive" title="Archive">
+                <a href="http://localhost:1313/archive" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
@@ -203,7 +137,7 @@ The challenge was structured to incrementally build a JSON parser, starting with
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Building My Own JSON Parser in Rust
+      Building a JSON Parser in Rust
     </h1>
     <div class="post-meta"><span title='2024-06-18 22:22:57 -0300 -03'>June 18, 2024</span>
 
@@ -628,12 +562,26 @@ Here I already parse the object before checking, this is not ideal but is good e
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
-  </footer>
+  </footer><script src="https://giscus.app/client.js"
+        data-repo="krymancer/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyODk2Mjg3Nzk="
+        data-category="Q&A"
+        data-category-id="DIC_kwDOEUNia84CnSOF"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="catppuccin_mocha"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://krymancer.dev/">krymancer.dev</a></span>
+        <span>&copy; 2025 <a href="http://localhost:1313/">krymancer.dev</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
