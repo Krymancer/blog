@@ -13,7 +13,20 @@ menu:
   - name: Twitter
     url: https://x.com/joaodocodigo
 
-
-
 params:
   comments: true
+
+markup:
+  goldmark:
+    renderHooks:
+      image:
+        enableDefault: true
+      link:
+        enableDefault: true
+
+module:
+  mounts:
+    - source: 'assets'
+      target: 'assets'
+    - source: 'attachments'
+      target: 'assets/attachments'

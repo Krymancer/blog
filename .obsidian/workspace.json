@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "7d7489914eb7dd35",
+    "type": "split",
+    "children": [
+      {
+        "id": "7dbc7afee5639b48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f61d5b313cbcaf40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-cc-json-parser.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02-cc-json-parser"
+            }
+          },
+          {
+            "id": "138be4014e9fd45b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/03-devlog-buzz.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03-devlog-buzz"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd39e52478566445",
+    "type": "split",
+    "children": [
+      {
+        "id": "495597bcd45610b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8f8d3faa77bcf55",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "72339abc3bbeedba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "68720fb5d1877002",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "69dd6d9806f8e320",
+    "type": "split",
+    "children": [
+      {
+        "id": "daa47bdb3e8bc77c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33b340280afbfb11",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03-devlog-buzz.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 03-devlog-buzz"
+            }
+          },
+          {
+            "id": "3fa707f260c1a5b4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03-devlog-buzz.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 03-devlog-buzz"
+            }
+          },
+          {
+            "id": "64dab74056b98730",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "92266f2f17545e7b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03-devlog-buzz.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 03-devlog-buzz"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "138be4014e9fd45b",
+  "lastOpenFiles": [
+    "public/attachments/Pasted image 20250722175220.png",
+    "public/attachments",
+    "attachments/Pasted image 20250722175220.png",
+    "attachments",
+    "Pasted image 20250722174134.png",
+    "Pasted image 20250722004109.png",
+    "03-devlog-buzz.md",
+    "02-cc-json-parser.md",
+    "03-devlog.md",
+    "01-cc-wt.md",
+    "00-demo-post.md"
+  ]
+}

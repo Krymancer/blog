@@ -4,10 +4,18 @@
     <title>krymancer.dev</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on krymancer.dev</description>
-    <generator>Hugo -- 0.144.2</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 18 Jun 2024 22:22:57 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jul 2025 01:27:14 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>03 Devlog Buzz</title>
+      <link>http://localhost:1313/posts/03-devlog-buzz/</link>
+      <pubDate>Mon, 21 Jul 2025 01:27:14 -0300</pubDate>
+      <guid>http://localhost:1313/posts/03-devlog-buzz/</guid>
+      <description>&lt;p&gt;Back in my journey of trying to learn zig on one of those days when I couldn&amp;rsquo;t get myself to sleep I thought, why not make a game using zig? Yes, the question is always &amp;ldquo;why?&amp;rdquo; and the answer is always &amp;ldquo;why not?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;So another one of my phases began, I started looking into some lib or anything that I cloud make an 2d game, I was thinking in using &lt;a href=&#34;https://libsdl.org/&#34;&gt;SDL&lt;/a&gt; as I already use it in the past with C++, but I remembered &lt;a href=&#34;https://www.raylib.com/index.html&#34;&gt;raylib&lt;/a&gt; and found out about &lt;a href=&#34;https://github.com/Not-Nik/raylib-zig&#34;&gt;raylib-zig&lt;/a&gt; and was an sign for me to start.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building a JSON Parser in Rust</title>
       <link>http://localhost:1313/posts/02-cc-json-parser/</link>
