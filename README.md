@@ -17,3 +17,16 @@ Go to the changes
 Build and deploy
 
 > hugo
+
+
+## Obsidian configuration
+
+In order to past images in obsidian and using it in the blog posts, we need to obsidian vault be the repo root folder and add this configuration to `.obsidian/app.json`
+
+```json
+{
+  "attachmentFolderPath": "attachments",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute"
+}
+``` 
