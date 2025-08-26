@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/03-devlog-buzz.md",
+                "file": "content/posts/04-back-to-arch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03-devlog-buzz"
+              "title": "04-back-to-arch"
             }
           }
         ],
@@ -175,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -185,6 +186,12 @@
   },
   "active": "138be4014e9fd45b",
   "lastOpenFiles": [
+    "content/posts/03-devlog-buzz.md",
+    "content/posts/04-back-to-arch.md",
+    "README.md",
+    "content/posts/02-cc-json-parser.md",
+    "content/posts/01-cc-wt.md",
+    "content/posts/00-demo-post.md",
     "README.md~",
     "public/attachments/Pasted image 20250722175220.png",
     "public/attachments",
